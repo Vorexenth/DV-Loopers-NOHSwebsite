@@ -941,8 +941,19 @@ h3 {
   transition: transform 0.3s ease;
 }
 
+/* Special styling for developer 5 to show full image */
+.dev-image-halfbody.dev5-full {
+  object-fit: contain;
+  object-position: center center;
+  /* No background - let the maroon wrapper background show through */
+}
+
 .developer-card:hover .dev-image-halfbody {
   transform: scale(1.08);
+}
+
+.developer-card:hover .dev-image-halfbody.dev5-full {
+  transform: scale(1.05);
 }
 
 /* Optional subtle overlay for better contrast */
